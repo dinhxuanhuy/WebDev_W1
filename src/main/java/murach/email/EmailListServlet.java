@@ -13,6 +13,10 @@ public class EmailListServlet extends HttpServlet  {
                           HttpServletResponse response)
             throws ServletException, IOException {
 
+        // Set UTF-8 encoding for request and response to handle Vietnamese
+        request.setCharacterEncoding("UTF-8");
+        response.setContentType("text/html; charset=UTF-8");
+
         String url = "/index.html";
 
         // get current action
@@ -48,6 +52,10 @@ public class EmailListServlet extends HttpServlet  {
     protected void doGet(HttpServletRequest request,
                          HttpServletResponse response)
             throws ServletException, IOException {
+        // Set UTF-8 encoding for GET requests as well
+        request.setCharacterEncoding("UTF-8");
+        response.setContentType("text/html; charset=UTF-8");
+
         doPost(request, response);
     }
 }
