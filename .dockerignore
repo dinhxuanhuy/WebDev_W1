@@ -1,0 +1,30 @@
+# Bỏ qua các file không cần thiết khi build Docker image
+target/
+*.war
+*.class
+*.log
+
+# IDE
+.idea/
+*.iml
+*.iws
+*.ipr
+.vscode/
+.settings/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Tomcat
+apache-tomcat-*/
+*.tmp
+
+# Git
+.git/
+.gitignore
+
+# Docker
+Dockerfile
+.dockerignore
+
